@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="2.5" type="plugin" group="editors-xtd" method="upgrade">
+	<name>Button - CBX Save and Visit</name>
+	<author>Joomboxr</author>
+	<creationDate>10.11.2015</creationDate>
+	<copyright>Copyright (C) 2015 Joomboxr.com. All rights reserved.</copyright>
+	<license>GNU General Public License version 2 or later; see LICENSE.txt</license>
+	<authorEmail>info@joomboxr.com</authorEmail>
+	<authorUrl>http://joomboxr.com</authorUrl>
+	<version>1.0</version>
+	<description>Add save and visit button for joomla content</description>
+	<files>
+		<filename plugin="cbxsaveandvisitbtn">cbxsaveandvisitbtn.php</filename>
+		<filename>index.html</filename>
+		<folder>cbxsaveandvisitbtn</folder>
+	</files>	
+        <config>
+            <fields name="params" addfieldpath="/plugins/editors-xtd/cbxsaveandvisitbtn/cbxsaveandvisitbtn/fields">
+                <fieldset name="basic" label="Basic Settings">
+					<field name="type" type="list" default="0" class="" label="Button Type" description="Button types">
+						<option value="0">Visit</option>
+						<option value="1">Visit with Save</option>
+						<option value="2">Visit with Save & Close</option>
+						<option value="3">Visit with Close</option>
+					</field>
+                </fieldset>
+           </fields>  
+       </config>
+</extension>
